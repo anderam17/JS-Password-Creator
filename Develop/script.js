@@ -97,11 +97,13 @@ var lower = confirm("Would you like lower case letters in your password? Press '
 //Set empty array to hold user's password
 var password = [];
 
+//array to hold the list off all possible characters as the user chooses them
 var possiblePasswordCharacters = [];
 
-//array of arrays
+//function that uses the users input to create an appropriate password
 function generatePassword(){
   
+    //if statements that check if the user wants the respective character type and merges that array with the possiblePasswordCharacters array
     if(special === true){
       possiblePasswordCharacters = possiblePasswordCharacters.concat(specialCharactersArray);
     } 
@@ -118,15 +120,18 @@ function generatePassword(){
       possiblePasswordCharacters = possiblePasswordCharacters.concat(upperCaseNumbersArray);
     } 
 
+    //this for loop gets a random element based on the parameters set by the user by using the getRandomElement function and pushes it to password array
     for(var i=0; i<length; i++){
-     var element = getRandom(possiblePasswordCharacters);
+     var element = getRandomElement(possiblePasswordCharacters);
      password.push(element);
     }
 
+    //joins the password array into a string and returns it
     return password.join("");
   }
 
-function getRandom(arr){
+//this function finds a random number between 0 and the length-1 of the possiblePasswordCharacters array. It then finds and returns the element at that index in the array
+function getRandomElement(arr){
   var rand = Math.floor(Math.random() * arr.length)
   var randElement = arr[rand];
   return randElement;
