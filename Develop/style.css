@@ -22,23 +22,27 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  background-image: url("https://previews.123rf.com/images/pongsapol/pongsapol1711/pongsapol171100069/89840859-tea-leaf-patterns-seamless-backgrounds-vectors.jpg");
 }
 
 header {
+  display: flex;
+  justify-content: center;
   font-family: 'Krona One', sans-serif;
   text-align: center;
   padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  margin: 20px;
+  color: hsl(0, 0%, 74%);
+  background-color: hsla(120, 15%, 22%, 0.822);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsla(120, 15%, 22%, 0.822);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 2px 8px 0px;
+  color: hsl(0, 0%, 74%);
+  font-size: 25px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -76,7 +80,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgba(44, 2, 2, 0.671);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
