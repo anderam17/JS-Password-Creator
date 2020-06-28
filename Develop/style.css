@@ -18,12 +18,14 @@ body {
 }
 
 .wrapper {
+  font-family: 'Open Sans Condensed', sans-serif;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 header {
+  font-family: 'Krona One', sans-serif;
   text-align: center;
   padding: 20px;
   padding-top: 0px;
